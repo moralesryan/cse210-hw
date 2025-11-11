@@ -24,10 +24,10 @@ class Program
             switch (choice)
             {
                 case 1:
-                    string promptText = PromptTemplate.GetRandomPrompt();
+                    string promptText = prompt.GetRandomPrompt();
                     Console.WriteLine($" {promptText}");
                     string content = Console.ReadLine();
-                    JournalEntry newEntry = new JournalEntry(prompt, content);
+                    JournalEntry newEntry = new JournalEntry(promptText, content);
                     journal.AddEntry(newEntry);
                     break;
                 
@@ -55,6 +55,7 @@ class Program
                     Console.WriteLine("Saving personal information...");
                     Console.WriteLine("Exiting...");
                     Console.WriteLine("Goodbye!");
+                    break;
             }
         }   
     }

@@ -6,7 +6,7 @@ public class PromptTemplate
     private List<string> _prompts = new List<string>()
     {
         "What are you grateful for today?",
-        "How did you see God's hand in your day",
+        "How did you see God's hand in your day?",
         "What made you feel loved today?",
         "Something that made you feel that is worth living: ",
         "A moment when you genuily smile",
