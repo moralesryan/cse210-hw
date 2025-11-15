@@ -32,7 +32,6 @@ public class Journal
         {
             _dailyStreak = 1;
             return;
-
         }
 
         var last = DateTime.Parse(_entries[^1]._dateCreated);
