@@ -27,7 +27,7 @@ class Word
         }
         else
         {
-            return new string("_", _wordContent.Length);
+            return new string('_', _wordContent.Length);
         }
     }
 }

@@ -24,7 +24,12 @@ class Scripture
         Random hiderandom = new Random();
         int index = hiderandom.Next(_content.Count);
 
-        _content[index].ToggleVisibility();
+        Word word = _content[index];
+
+        if(word.GetVisibility() == true)
+        {
+            word.ToggleVisibility();
+        }
     }
 
     public string Display()
