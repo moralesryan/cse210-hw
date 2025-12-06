@@ -4,6 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Shapes Project.");
+        Animal basicAnimal = new Animal();
+        Animal pig = new Pig();
+        Animal dawg = new Dawg();
+        Animal cat = new Cat();
+
+        basicAnimal.animalSound();
+        pig.animalSound();
+        dawg.animalSound();
+        cat.animalSound();
+
+
     }
 }
