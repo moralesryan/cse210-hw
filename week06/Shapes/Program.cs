@@ -4,16 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Animal basicAnimal = new Animal();
-        Animal pig = new Pig();
-        Animal dawg = new Dawg();
-        Animal cat = new Cat();
+      Shapes basemsg = new Shapes();
+      Shapes circle = new Circle();
+      Shapes triangle = new Triangle();
+      Shapes rectangle = new Rectangle();
 
-        basicAnimal.animalSound();
-        pig.animalSound();
-        dawg.animalSound();
-        cat.animalSound();
-
-
+      basemsg.FormulaForTheArea();
+      Console.Write("Circle: "); circle.FormulaForTheArea();
+      Console.Write("Triangle: "); triangle.FormulaForTheArea();
+      Console.Write("Rectangle: "); rectangle.FormulaForTheArea();
     }
 }
